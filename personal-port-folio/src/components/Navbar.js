@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 
 const menuItems = [
-  "Dashboard",
-  "Activity",
-  "Schedule",
-  "Integration",
-  "Settings"
+  "Home",
+  "About",
+  "Skills",
+  "contact",
+  
 ];
 
 const Navbar = () => {

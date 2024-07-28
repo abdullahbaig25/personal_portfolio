@@ -1,12 +1,15 @@
 import React from "react";
+import Heading from "./Heading";
 
 const About = () => {
   return (
-    <div className="px-4 lg:px-14 max-w-screen-2xl mx-auto my-8">
-      <div className="md:w-11/12 mx-auto flex flex-col md:flex-row justify-between items-center gap-12">
+    <>
+    <Heading title={"About me"}/>
+        <div className="px-4 lg:px-14 max-w-screen-2xl mx-auto my-8 mb-20">
+      <div className="md:w-11/12 mx-auto flex flex-col md:flex-row justify-between items-center ">
         <img src="https://picsum.photos/id/1/400/400" alt="About me" className="w-full md:w-auto" />
         <div className="md:w-3/5">
-          <h2 className="text-4xl text-gray-800 font-semibold mb-4 md:w-4/5">About me</h2>
+          {/* <h2 className="text-4xl text-gray-800 font-semibold mb-4 md:w-4/5">About me</h2> */}
           <p className="md:w-3/4 text-sm text-gray-600 mb-8">
             I am a Computer Engineer with a passion for frontend development. 
             I am highly motivated and have worked extensively with React.js and Tailwind CSS, 
@@ -29,6 +32,7 @@ const About = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 
