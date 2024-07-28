@@ -1,16 +1,19 @@
 import React from "react";
-
-const randomImage = () => {
-  const imageId = Math.floor(Math.random() * 1000);
-  return `https://picsum.photos/id/${imageId}/200/200`;
-};
-
+import { motion } from "framer-motion";
 const HeroSection = () => {
   return (
-    <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-20 pb-16 text-center lg:pt-12 " >
-        <div className="flex justify-center">
-        <img src="https://picsum.photos/id/1/200/200" className="rounded-full"/>
-        </div>
+    <div
+      className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-20 pb-16 text-center lg:pt-12"
+      initial={{ opacity: 0, y: 50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+    >
+      <div className="flex justify-center mb-6">
+        <img
+          src="https://picsum.photos/id/1/200/200"
+          className="rounded-full"
+        />
+      </div>
       <p className="mx-auto -mt-4 max-w-2xl text-lg tracking-tight text-slate-700 sm:mt-6">
         Welcome to
         <span className="border-b border-dotted border-slate-300">

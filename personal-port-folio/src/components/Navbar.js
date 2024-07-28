@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 const menuItems = [
-  { name: "Home", href: "#hero" },
+  { name: "Home", href: "#home" },
   { name: "About", href: "#about" },
   { name: "Skills", href: "#skills" },
   { name: "Contact", href: "#contact" },
@@ -14,8 +14,8 @@ const Navbar = () => {
 
   const renderMenuItems = (isMobile = false) => (
     menuItems.map((item) => (
-      <li key={item.name} className={`px-3 py-2 ${isMobile ? "w-full" : ""} hover:bg-blue-600 hover:text-white rounded-lg transition-all cursor-pointer`}>
-        <a href={item.href} className={isMobile ? "block" : "text-black hover:text-white"}>{item.name}</a>
+      <li key={item.name} className={`px-3 py-2 ${isMobile ? "w-full" : ""} hover:text-black rounded-lg transition-all cursor-pointer`}>
+        <a href={item.href} className={isMobile ? "block" : "text-black hover:underline"}>{item.name}</a>
       </li>
     ))
   );
