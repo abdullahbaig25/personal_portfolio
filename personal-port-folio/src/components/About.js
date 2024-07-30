@@ -9,7 +9,7 @@ const About = () => {
       <div className="md:w-11/12 mx-auto flex flex-col md:flex-row justify-between items-center ">
         <img src="https://picsum.photos/id/1/400/400" alt="About me" className="w-full md:w-auto" />
         <div className="md:w-3/5">
-          {/* <h2 className="text-4xl text-gray-800 font-semibold mb-4 md:w-4/5">About me</h2> */}
+          <h4 className="text-3xl text-gray-800 font-semibold mb-4 md:w-4/5">My name is Muhammad Abduallah Baig</h4>
           <p className="md:w-3/4 text-sm text-gray-600 mb-8">
             I am a Computer Engineer with a passion for frontend development. 
             I am highly motivated and have worked extensively with React.js and Tailwind CSS, 

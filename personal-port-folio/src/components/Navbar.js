@@ -29,8 +29,8 @@ const Navbar = () => {
         <ul className="hidden md:flex items-center gap-4">
           {renderMenuItems()}
         </ul>
-        <button className="bg-blue-600 px-3 py-2 rounded-lg md:hidden" onClick={toggleMenu}>
-          <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" strokeWidth="1.5" stroke="white" className="w-6 h-6">
+        <button className=" md:hidden" onClick={toggleMenu}>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="black" viewBox="0 0 24 24" strokeWidth="1.5" stroke="black" className="w-6 h-6">
             <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
           </svg>
         </button>
